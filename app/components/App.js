@@ -7,6 +7,7 @@ var Nav = require('./Nav');
 var Home = require('./Home');
 var Battle = require('./Battle');
 var Popular = require('./Popular');
+var Results = require('./Results');
 
 class App extends React.Component {
   render() {
