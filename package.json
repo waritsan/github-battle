@@ -4,8 +4,10 @@
   "description": "Project for React Training's fundamental course.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "build": "NODE_ENV='production' webpack -p",
+    "firebase-init": "firebase login && firebase init",
+    "deploy": "npm run build && firebase deploy"
   },
   "author": "Warit Santaputra",
   "license": "MIT",
@@ -17,6 +19,7 @@
   },
   "dependencies": {
     "axios": "^0.16.1",
+    "firebase-tools": "^3.9.1",
     "prop-types": "^15.5.10",
     "query-string": "^4.3.4",
     "react": "^15.5.4",
